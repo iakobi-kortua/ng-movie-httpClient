@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="search-movie">
+  <label for="">Search Movie: </label>
+  <input type="text" placeholder="Search Movie" [formControl]="search" />
+</div>
+
+<div class="card" *ngIf="movie$ | async as movie">
+  <div class="img">
+    <img [src]="movie.Poster" alt="poster" />
+  </div>
+  <div class="description">
+    <ul>
+      <li class="title">{{ movie.Title }}</li>
+      <li>Year: {{ movie.Year }}</li>
+      <li>Released: {{ movie.Released }}</li>
+      <li>Runtime: {{ movie.Runtime }}</li>
+      <li>Genre: {{ movie.Genre }}</li>
+      <li>Director: {{ movie.Director }}</li>
+      <li>Actors: {{ movie.Actors }}</li>
+      <li>Country: {{ movie.Country }}</li>
+      <li>imdbRating: {{ movie.imdbRating }}</li>
+    </ul>
+    <button (click)="add(movie)">Add to Favourite</button>
+  </div>
+</div>

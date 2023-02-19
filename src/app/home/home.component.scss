@@ -1,0 +1,91 @@
+.search-movie {
+  width: 300px;
+  display: flex;
+  margin: 25px auto;
+  label {
+    margin-right: 10px;
+    color: rgb(54, 81, 81);
+  }
+}
+
+.card {
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(50, 95, 95);
+  .img {
+    width: 200px;
+    height: 350px;
+    img {
+      width: 200px;
+      height: 350px;
+    }
+  }
+  .description {
+    width: 200px;
+    height: 350px;
+    button {
+      margin-left: 25px;
+      background: rgb(50, 95, 95);
+      background-image: -webkit-linear-gradient(
+        top,
+        rgb(50, 95, 95),
+        rgba(26, 118, 118, 0.389)
+      );
+      background-image: -moz-linear-gradient(
+        top,
+        rgb(50, 95, 95),
+        rgba(26, 118, 118, 0.389)
+      );
+      background-image: -ms-linear-gradient(
+        top,
+        rgb(50, 95, 95),
+        rgba(26, 118, 118, 0.389)
+      );
+      background-image: -o-linear-gradient(
+        top,
+        rgb(50, 95, 95),
+        rgba(26, 118, 118, 0.389)
+      );
+      background-image: linear-gradient(
+        to bottom,
+        rgb(50, 95, 95),
+        rgba(26, 118, 118, 0.389)
+      );
+      -webkit-border-radius: 34;
+      -moz-border-radius: 34;
+      border-radius: 34px;
+      font-family: Arial;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 5px 10px 5px 10px;
+      text-decoration: none;
+
+      &:hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+        text-decoration: none;
+      }
+    }
+    ul {
+      padding: 5px;
+      margin: 0;
+      .title {
+        font-size: 20px;
+        text-align: center;
+        color: rgb(0, 35, 53);
+      }
+      li {
+        margin: 8px 0px;
+        list-style: none;
+        color: white;
+      }
+    }
+  }
+}

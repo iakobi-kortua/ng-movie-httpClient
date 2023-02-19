@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="movie-card" *ngFor="let movies of favouriteMovies$ | async">
+  <div><img class="movie-card-img" [src]="movies.Poster" /></div>
+  <div>{{ movies.Title }}</div>
+  <div>Year: {{ movies.Year }}</div>
+  <div>Released: {{ movies.Released }}</div>
+  <div>Runtime: {{ movies.Runtime }}</div>
+  <div>Genre: {{ movies.Genre }}</div>
+  <div>Director: {{ movies.Director }}</div>
+  <div>Actors: {{ movies.Actors }}</div>
+  <div>Country: {{ movies.Country }}</div>
+  <div>imdbRating: {{ movies.imdbRating }}</div>
+  <div>
+    <button (click)="delete(movies.id)">Delete</button>
+  </div>
+</div>
